@@ -1,0 +1,73 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+  background: #000;
+}
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: #aaa;
+  transition: 1s opacity;
+}
+.mask {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  background-color: rgba(0, 0, 0, .3);
+}
+.stopfade {
+  opacity: .5;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin: 80px 0 35px;
+}
+
+.slogan {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slogan p {
+  margin: 24px 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.slogan .devider {
+  display: block;
+  width: 140px;
+  height: 1px;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 667px) {
+  .slogan p {
+    padding: 0 20px;
+    font-size: 21px;
+    line-height: 32px;
+    margin: 24px 0;
+  }
+  .slogan .devider {
+    width: 80px;
+  }
+}
